@@ -449,4 +449,4 @@ like6
 mmt = -2*(like5-like6)
 mmt
 
-#The test statistic I calculate is -46,377.79. Based on the Chi-square distribution, this is significant and IIA is violated.
+#The test statistic I calculate is 275.0719. Based on the Chi-square distribution, this is significant and IIA is violated.
