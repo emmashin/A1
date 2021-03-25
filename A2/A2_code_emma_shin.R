@@ -51,7 +51,7 @@ for (j in 1:10)
 
 #Mapping between observed attributes and choices
 choicePrice_demos <- left_join(choicePrice, demos, by = "hhid")
-choicePrice_demos2 <- choicePrice_demos %>%
+choicePrice_demos3 <- choicePrice_demos %>%
   group_by(choice) %>%
   summarize(meanIncome = mean(Income),
             mean3_4 = mean(Fs3_4),
@@ -60,7 +60,6 @@ choicePrice_demos2 <- choicePrice_demos %>%
             meancollege = mean(college),
             meanwhtcollar = mean(whtcollar),
             meanretired = mean(retired))
-names(choicePrice_demos2)
 
 #================================
 #Exercise 2
